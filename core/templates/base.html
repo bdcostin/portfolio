@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <title>Bailey Costin</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+    </head>
+    <header>
+        <a href="{% url 'index' %}">
+            <img class="logo" src="{% static '/img/plato-logo.png' %}" alt="An artist rendering of Plato, the Greek philosopher.">
+        </a>
+        <nav>
+            <ul class="flex list flex justify-end mr4">
+                <li class="header-font ml1 link hover-orange dib pointer">Hello</li>
+                <li class="header-font ml1">-</li>
+                <li><a class="header-font ml1 link hover-orange dib pointer" ref="{% url 'projects' %}">Projects</a></li>
+                <li class="header-font ml1">-</li>
+                <li class="header-font ml1 link hover-orange dib pointer">Resume</li>
+                <li class="header-font ml1">-</li>
+                <li class="header-font ml1 link hover-orange dib pointer">Connect</li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+    <footer>
+        <img class="" src="{% static '/img/bull_city_skyline.png' %}" alt="">
+    </footer>
+</html>
