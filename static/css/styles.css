@@ -53,3 +53,13 @@
 .dot_main {
     color: #FF7900;
 }
+
+#headshot {
+    border: all;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: white;
+    width: 25%;
+    height: 25%;
+    border-width: .5rem;
+}

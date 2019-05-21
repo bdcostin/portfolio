@@ -6,6 +6,7 @@
         <title>Bailey Costin</title>
         <meta charset="utf-8">
         <meta name="description" content="">
+        <link rel="shortcut icon" href="{% static '/img/orange_circle.png' %}" type="image/x-icon">
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
         <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
@@ -19,7 +20,7 @@
             <ul class="flex list flex justify-end mr4">
                 <li class="header-font ml1 link hover-orange dib pointer">Hello</li>
                 <li class="header-font ml1">-</li>
-                <li><a class="header-font ml1 link hover-orange dib pointer" ref="{% url 'projects' %}">Projects</a></li>
+                <li><a class="header-font ml1 link hover-orange dib pointer black" href="{% url 'projects' %}">Projects</a></li>
                 <li class="header-font ml1">-</li>
                 <li class="header-font ml1 link hover-orange dib pointer">Resume</li>
                 <li class="header-font ml1">-</li>
