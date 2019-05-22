@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "browserify": "^16.2.3",
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {
+    "watchify": "^3.11.1"
+  },
+  "scripts": {
+    "watch": "watchify static/js/main.js --debug -v -o static/build/bundle.js",
+    "build-dev": "browserify static/js/main.js --debug -o static/build/bundle.js",
+    "build": "browserify static/js/main.js -o static/build/bundle.js"
+  }
+}

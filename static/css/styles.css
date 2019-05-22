@@ -1,9 +1,14 @@
+@font-face {
+    font-family: 'century-gothic-bold';
+    src: url('/static/fonts/century-gothic-bold.TTF') format("truetype"),
+        local('century-gothic-bold');
+}
+
 .logo {
     height: 70%;
     width: 6%;
     padding: 20px;
     margin-left: 10px;
-    
 }
 
 .logo {
@@ -42,8 +47,14 @@
     100% { transform: rotate(359deg); }
 }
 
+.nav-font {
+    font-family: 'century-gothic-bold', sans-serif;
+}
+
 .header-font {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'century-gothic-bold', sans-serif;
+    font-size: 2em;
+    color: white;
 }
 
 .body-font {
@@ -58,8 +69,73 @@
     border: all;
     border-style: solid;
     border-radius: 100%;
-    border-color: white;
-    width: 25%;
-    height: 25%;
+    border-color: #FFF;
+    width: 75%;
+    height: 90%;
     border-width: .5rem;
+}
+
+.orange-box {
+    width: 100%;
+    padding: 5%;
+    background-color: #FF7900;
+}
+
+.black-box {
+    width: 100%;
+    background-color: #080808;
+    margin-top: 50px;
+}
+
+.project-background {
+    width: 100%;
+    padding: 25%;
+    background-color: #DEDEDE;
+}
+
+.project-background-bottom {
+    width: 100%;
+    padding: 5%;
+    background-color: #DEDEDE;
+}
+
+.project-background-shadow {
+    position: relative;
+}
+
+.project-background-shadow:before, .project-background-shadow:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 420px;
+    background: #777;
+    -webkit-box-shadow: 0 20px 20px #777;
+    -moz-box-shadow: 0 20px 20px #777;
+    box-shadow: 0 20px 20px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.project-background-shadow:after { 
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+.footer-box {
+    width: 100%;
+    padding: 50px;
+    margin-top: 0;
+    background-color: #080808;
 }

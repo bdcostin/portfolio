@@ -2,13 +2,23 @@
 {% load static %}
 
 {% block content %}
-<div class="flex ml6">
-    <img id="headshot" src="{% static '/img/headshot.jpg' %}" alt="">
-    <div class="tc">
-        <h1 class="header-font">Hello<span class="dot_main">.</span></h1>
-                <p class="body-font">
-                    My name is Bailey Costin, and I am a software developer.
-                </p>
+<div class="flex">
+    <div>
+        <img id="headshot" src="{% static '/img/headshot.jpg' %}" alt="">
+    </div>
+    <div class="black-box tc">
+        <h1 class="header-font">What's this dude's deal? 🤔</h1>
+        <p class="body-font white">
+            My name is Bailey Costin, and I am a software developer.
+        </p>
+    </div>
+</div>
+<div class="orange-box wow slideInLeft"></div>
+<h2 class="header-font">Tools 🛠</h2>
+<div>
+    <div class="project-background">
+    </div>
+    <div class="project-background-bottom project-background-shadow">
     </div>
 </div>
 {% endblock %}
