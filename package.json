@@ -3,6 +3,8 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "browserify": "^16.2.3",
+    "devicon": "^2.2.0",
+    "programming-languages-logos": "0.0.2",
     "wow.js": "^1.2.2"
   },
   "devDependencies": {

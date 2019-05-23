@@ -53,8 +53,6 @@
 
 .header-font {
     font-family: 'century-gothic-bold', sans-serif;
-    font-size: 2em;
-    color: white;
 }
 
 .body-font {
@@ -85,6 +83,45 @@
     width: 100%;
     background-color: #080808;
     margin-top: 50px;
+}
+
+.tools-container {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.tools-small-containers1 {
+    max-width: 25%;
+    min-width: 25%;
+    flex: 1 1 20%;
+    margin-top: 10px;
+}
+
+.tools-small-containers2 {
+    max-width: 60%;
+    min-width: 25%;
+    flex: 1 1 20%;
+}
+
+.tools {
+    font-size: 5rem
+}
+
+.tool-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tool-box>* {
+    flex: 1 1 140px;
+}
+
+.projects-header {
+    position: absolute;
+    top: 5%;
+    font-family: 'century-gothic-bold', sans-serif;
 }
 
 .project-background {
@@ -139,3 +176,4 @@
     margin-top: 0;
     background-color: #080808;
 }
+
