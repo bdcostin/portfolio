@@ -8,9 +8,11 @@
         <meta name="description" content="">
         <link rel="shortcut icon" href="{% static '/img/orange_circle.png' %}" type="image/x-icon">
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
         <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" href="animate.min.css">
         <script src="{% static 'build/bundle.js' %}"></script>
@@ -20,11 +22,8 @@
         </script>
     </head>
     <header>
-        <a href="{% url 'index' %}">
-            <img class="logo" src="{% static '/img/plato-logo.png' %}" alt="An artist rendering of Plato, the Greek philosopher.">
-        </a>
         <nav>
-            <ul class="flex list flex justify-end mr4">
+            <ul class="flex list flex justify-center mr4">
                 <li class="nav-font ml1 link hover-orange dib pointer">Hello</li>
                 <li class="nav-font ml1">-</li>
                 <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'projects' %}">Projects</a></li>
@@ -36,9 +35,25 @@
         </nav>
     </header>
     <body>
-        {% block content %}{% endblock %}
+        <div class="sidenav">
+            <a href="{% url 'index' %}">
+                <img class="logo" src="{% static '/img/plato-logo.png' %}" alt="An artist rendering of Plato, the Greek philosopher.">
+            </a>
+            <div id="my_name" class="header-font">
+                Bailey Costin
+            </div>
+            <div class="sidenav-icons">
+                <i class="sidenav-icons-spacing pointer fas fa-home"></i>
+                <i id="sidenav-about-spacing" class="sidenav-left-spacing sidenav-icons-spacing pointer fas fa-user"></i>
+                <i class="sidenav-icons-spacing pointer fas fa-project-diagram"></i>
+                <i id="sidenav-contact-spacing" class="sidenav-icons-spacing pointer fas fa-envelope"></i>
+            </div>
+        </div>
+        <div class="main">
+            {% block content %}{% endblock %}
+        </div>
     </body>
-    <footer>
+    <footer class="main">
         <img class="mb0" src="{% static '/img/bull_city_skyline.png' %}" alt="">
         <div class="footer-box"></div>
     </footer>
