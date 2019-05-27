@@ -4,6 +4,10 @@
         local('century-gothic-bold');
 }
 
+a {
+    outline: 0 !important;
+}
+
 .logo {
     height: 70%;
     width: 60%;
@@ -142,6 +146,10 @@ section {
     border-width: .5rem;
 }
 
+.bio {
+    line-height: 2rem;
+}
+
 .orange-box {
     width: 100%;
     padding: 5%;
@@ -196,6 +204,11 @@ section {
     font-family: 'century-gothic-bold', sans-serif;
 }
 
+.projects-button{
+    color: #FF7900;
+    font-family: 'century-gothic-bold', sans-serif;
+}
+
 .project-background {
     width: 100%;
     padding: 25%;
@@ -242,6 +255,14 @@ section {
     left: auto;
 }
 
+.vision-font {
+    font-size: 40px;
+}
+
+.vision-font:hover {
+    color: #FF7900;
+}
+
 .footer-box {
     width: 100%;
     padding: 50px 50px 10px 50px;
@@ -249,3 +270,7 @@ section {
     background-color: #080808;
 }
 
+.footer-icons {
+    width: 35px;
+    height: 35px;
+}

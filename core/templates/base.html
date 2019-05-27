@@ -29,7 +29,7 @@
                 <li class="nav-font ml1">-</li>
                 <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'resume' %}">Resume</a></li>
                 <li class="nav-font ml1">-</li>
-                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'contact' %}">Connect</a></li>
+                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="mailto:bailey.costin@gmail.com">Connect</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +47,7 @@
                 </a>
                 <i id="sidenav-about-spacing" class="sidenav-left-spacing sidenav-icons-spacing pointer fas fa-user"></i>
                 <i class="sidenav-icons-spacing pointer fas fa-project-diagram"></i>
-                <a id="sidenav-contact-spacing" class="sidenav-icons-spacing" href="{% url 'contact' %}">
+                <a id="sidenav-contact-spacing" class="sidenav-icons-spacing" href="mailto:bailey.costin@gmail.com">
                     <i class="pointer black fas fa-envelope"></i>
                 </a>
             </div>
@@ -56,14 +56,4 @@
             {% block content %}{% endblock %}
         </div>
     </body>
-    <footer class="main">
-        <img class="mb0" src="{% static '/img/bull_city_skyline.png' %}" alt="">
-        <div class="footer-box">
-            <div class="tc">
-                <div class="body-font gray">Made with 🧡by me</div>
-                <div class="body-font"><a class="gray link" href="https://github.com/bdcostin/portfolio">Source code</a></div>
-                <div class="body-font gray">© 2019</div>
-            </div>
-        </div>
-    </footer>
 </html>
