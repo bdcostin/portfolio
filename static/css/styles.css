@@ -52,14 +52,13 @@
     line-height: 100px;
     text-align: center;
     color: #FF7900;
-    min-height: 600px;
+    min-height: 650px;
     display: flex;
     justify-content: center;
 }
 
 .font-weight {
     font-weight: 100;
-    /* transform: scale(0.2) */
     transition: transform 0.2s;
 }
 
@@ -94,10 +93,14 @@ section {
 .sidenav-icons {
     display: flex;
     font-size: 30px;
-    margin-top: 420px;
+    margin-top: 430px;
     margin-left: 40px;
     flex-direction: column;
     justify-content: center;
+}
+
+.fas:hover {
+    color: #FF7900;
 }
 
 .sidenav-icons-spacing {
@@ -241,7 +244,7 @@ section {
 
 .footer-box {
     width: 100%;
-    padding: 50px;
+    padding: 50px 50px 10px 50px;
     margin-top: 0;
     background-color: #080808;
 }

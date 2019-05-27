@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" href="animate.min.css">
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
         <script src="{% static 'build/bundle.js' %}"></script>
         <script src="js/wow.min.js"></script>
         <script>
@@ -23,14 +24,12 @@
     </head>
     <header>
         <nav>
-            <ul class="flex list flex justify-center mr4">
-                <li class="nav-font ml1 link hover-orange dib pointer">Hello</li>
-                <li class="nav-font ml1">-</li>
+            <ul class="flex list flex justify-end mt4 mr4">
                 <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'projects' %}">Projects</a></li>
                 <li class="nav-font ml1">-</li>
-                <li class="nav-font ml1 link hover-orange dib pointer">Resume</li>
+                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'resume' %}">Resume</a></li>
                 <li class="nav-font ml1">-</li>
-                <li class="nav-font ml1 link hover-orange dib pointer">Connect</li>
+                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'contact' %}">Connect</a></li>
             </ul>
         </nav>
     </header>
@@ -43,10 +42,14 @@
                 Bailey Costin
             </div>
             <div class="sidenav-icons">
-                <i class="sidenav-icons-spacing pointer fas fa-home"></i>
+                <a class="sidenav-icons-spacing" href="{% url 'index' %}">
+                    <i class="black pointer fas fa-home"></i>
+                </a>
                 <i id="sidenav-about-spacing" class="sidenav-left-spacing sidenav-icons-spacing pointer fas fa-user"></i>
                 <i class="sidenav-icons-spacing pointer fas fa-project-diagram"></i>
-                <i id="sidenav-contact-spacing" class="sidenav-icons-spacing pointer fas fa-envelope"></i>
+                <a id="sidenav-contact-spacing" class="sidenav-icons-spacing" href="{% url 'contact' %}">
+                    <i class="pointer black fas fa-envelope"></i>
+                </a>
             </div>
         </div>
         <div class="main">
@@ -55,6 +58,12 @@
     </body>
     <footer class="main">
         <img class="mb0" src="{% static '/img/bull_city_skyline.png' %}" alt="">
-        <div class="footer-box"></div>
+        <div class="footer-box">
+            <div class="tc">
+                <div class="body-font gray">Made with 🧡by me</div>
+                <div class="body-font"><a class="gray link" href="https://github.com/bdcostin/portfolio">Source code</a></div>
+                <div class="body-font gray">© 2019</div>
+            </div>
+        </div>
     </footer>
 </html>
