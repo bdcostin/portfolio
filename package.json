@@ -4,7 +4,9 @@
     "animate.css": "^3.7.0",
     "browserify": "^16.2.3",
     "devicon": "^2.2.0",
+    "jquery-parallax.js": "^1.5.0",
     "programming-languages-logos": "0.0.2",
+    "rellax": "^1.9.1",
     "wow.js": "^1.2.2"
   },
   "devDependencies": {

@@ -6,8 +6,10 @@ $(document).scroll(function () {
   var yAxis = $(this).scrollTop()
   if (yAxis > 350) {
     $('.sidenav-icons-spacing').fadeIn()
+    $('.title').fadeIn()
   } else {
     $('.sidenav-icons-spacing').fadeOut()
+    $('.title').fadeOut()
   }
 })
 

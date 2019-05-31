@@ -50,6 +50,24 @@ a {
     100% { transform: rotate(359deg); }
 }
 
+.letter1 {
+    font-family: 'century-gothic-bold', sans-serif;
+    font-size: 400px;
+}
+
+.letter2 {
+    font-family: 'century-gothic-bold', sans-serif;
+    font-size: 400px;
+    margin-left: 65%;
+}
+
+.logo2 {
+    height: 20%;
+    width: 10%;
+    margin-left: 75%;
+    z-index: 50;
+}
+
 .greeting {
     font-family: 'Fira Sans', sans-serif;
     font-size: 80px;
@@ -112,6 +130,10 @@ section {
     margin-bottom: 25px;
 }
 
+.title {
+    display: none;
+}
+
 #sidenav-contact-spacing {
     margin-left: 3px;
 }
@@ -158,8 +180,9 @@ section {
 }
 
 .black-box {
-    width: 100%;
+    width: 50%;
     background-color: #080808;
+    margin-left: 0;
 }
 
 .tools-container {
@@ -196,12 +219,8 @@ section {
 }
 
 .projects-header {
-    position: relative;
-    float: left;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: 'century-gothic-bold', sans-serif;
+    font-size: 44px;
 }
 
 .projects-button{
@@ -210,8 +229,11 @@ section {
 }
 
 .project-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 25%;
+    padding-bottom: 50%;
     background-color: #DEDEDE;
 }
 
@@ -274,3 +296,5 @@ section {
     width: 35px;
     height: 35px;
 }
+
+
