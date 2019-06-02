@@ -55,40 +55,11 @@ a {
     font-size: 400px;
 }
 
-.letter2 {
-    font-family: 'century-gothic-bold', sans-serif;
-    font-size: 400px;
-    margin-left: 65%;
-}
-
 .logo2 {
     height: 20%;
     width: 10%;
     margin-left: 75%;
     z-index: 50;
-}
-
-.greeting {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 80px;
-    line-height: 100px;
-    text-align: center;
-    color: #FF7900;
-    min-height: 650px;
-    display: flex;
-    justify-content: center;
-}
-
-.font-weight {
-    font-weight: 100;
-    transition: transform 0.2s;
-}
-
-section {
-    width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-auto-rows: 100px;
 }
 
 #my_name {
@@ -154,10 +125,6 @@ section {
     font-family: 'Roboto', sans-serif;
 }
 
-.dot_main {
-    color: #FF7900;
-}
-
 #headshot {
     border: all;
     border-style: solid;
@@ -180,29 +147,33 @@ section {
 }
 
 .black-box {
-    width: 50%;
+    width: 100%;
     background-color: #080808;
     margin-left: 0;
 }
 
+.gray-box {
+    width: 100%;
+    padding: 200px;
+    background-color: #DEDEDE;
+    z-index: 5;
+}
+
 .tools-container {
     min-height: 100%;
+    background-color: #DEDEDE; 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    z-index: 5;
 }
 
-.tools-small-containers1 {
-    max-width: 25%;
+.tools-small-container {
+    max-width: 80%;
     min-width: 25%;
+    margin: 120px 120px 120px 120px;
     flex: 1 1 20%;
-    margin-top: 10px;
-}
-
-.tools-small-containers2 {
-    max-width: 60%;
-    min-width: 25%;
-    flex: 1 1 20%;
+    background-color: white; 
 }
 
 .tools {
@@ -238,6 +209,9 @@ section {
 }
 
 .project-background-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 5%;
     background-color: #DEDEDE;
