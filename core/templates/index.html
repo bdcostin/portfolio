@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static %}
+{% load staticfiles %}
 
 {% block content %}
 <div class="rellax" data-rellax-speed="-4">
@@ -10,12 +10,28 @@
 </div>
 <div class="flex">
     <div class="black-box pa4 mt5">
-        <h2 class="header-font white tc">Hey there, my name is Bailey! I am a software developer and designer living in Durham, NC. </h2>
+        <h2 class="header-font white tc">Hey there, my name is Bailey! I am a full stack developer from Durham, North Carolina. </h2>
     </div>
     <div class="gray-box mt5">
         <div class="body-font">
-            Perfectionism is
+            I am passionate about building software that improves peoples lives.
         </div>
+    </div>
+</div>
+<h3 class="header-font black f-5">My Work</h3>
+{% for project in projects %}
+    {% if project.thumb_nail %}
+       <img src="{{ project.thumb_nail }}">
+    {% endif %}
+{% endfor %}
+<div>
+    <div class="project-background">
+    {% for project in projects %}
+       <div>{{ thumb_nail }}</div>
+    {% endfor %}
+    </div>
+    <div class="project-background-bottom project-background-shadow">
+        <a class="projects-button f6 link dim ba bw2 ph3 pv2 mb2 dib" href="{% url 'projects' %}">See More</a>
     </div>
 </div>
 <h2 class="header-font black f-5 mt5">Tools of my Craft</h2>
@@ -39,23 +55,15 @@
         </ul>
     </div>
 </div>
-<h3 class="header-font black f-5">My Work</h3>
-<div>
-    <div class="project-background">
-    </div>
-    <div class="project-background-bottom project-background-shadow">
-        <a class="projects-button f6 link dim ba bw2 ph3 pv2 mb2 dib" href="{% url 'projects' %}">See More</a>
-    </div>
-</div>
 <div class="flex">
     <div class="header-font black mt5 mb4 f-5">Want to work with me?</div>
-    <div class="header-font tc mt5 mb4 ml6">
+    <div class="header-font tc mt5 mb5 ml6">
         <a class="black link vision-font " href="mailto:bailey.costin@gmail.com">
             Tell me <br>your vision<br>👁
         </a>
     </div>
 </div>
-<img src="{% static '/img/bull_city_skyline.png' %}" alt="">
+{% comment %} <img src="{% static '/img/bull_city_skyline.png' %}" alt=""> {% endcomment %}
 <script>
     var rellax = new Rellax('.rellax');
 </script>

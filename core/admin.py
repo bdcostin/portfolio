@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Projects
+from .models import Project
 
-@admin.register(Projects)
-class ProjectsAdmin(admin.ModelAdmin):
+@admin.register(Project)
+class ProjectAdmin(admin.ModelAdmin):
     list_display = ('title', 'thumb_nail', 'description', 'deployed_url')
     exclude = ('slug',)
