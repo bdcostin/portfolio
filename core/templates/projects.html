@@ -1,6 +1,11 @@
 {% extends "base.html" %}
-{% load static %}
+{% load staticfiles %}
 
 {% block content %}
-<div>test</div>
+{% for project in project_list %}
+    <div class="mt5 mr3 ml3">
+        <img class="project-thumbnail" src="{{ project.thumb_nail.url }}">
+        <div class="body-font tc mt5">{{ project }}</div>
+    </div>
+{% endfor %}
 {% endblock %}

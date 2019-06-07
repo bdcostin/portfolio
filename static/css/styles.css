@@ -253,6 +253,12 @@ a {
     background-color: #ffffff;
 }
 
+.github-icons {
+    width: 35px;
+    height: 35px;
+    margin-left: 45%;
+}
+
 .vision-font {
     font-size: 40px;
 }

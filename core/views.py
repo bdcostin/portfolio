@@ -13,7 +13,10 @@ class IndexView(ListView):
     context_object_name = 'project_list'
 
 class ProjectsView(ListView):
+    model = Project
+    queryset = Project.objects.order_by('-title')
     template_name = "projects.html"
+    context_object_name = 'project_list'
 
 def contact_me(request):
     if request.method == 'POST':

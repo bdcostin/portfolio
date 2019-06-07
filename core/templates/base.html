@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
         <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" href="animate.min.css">
         <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
@@ -47,7 +46,9 @@
                     <i class="black pointer fas fa-home"></i>
                 </a>
                 <i id="sidenav-about-spacing" class="sidenav-left-spacing sidenav-icons-spacing pointer fas fa-user"></i>
-                <i class="sidenav-icons-spacing pointer fas fa-project-diagram"></i>
+                <a class="sidenav-icons-spacing" href="{% url 'projects' %}">
+                    <i class="black pointer fas fa-project-diagram"></i>
+                </a>
                 <a id="sidenav-contact-spacing" class="sidenav-icons-spacing" href="mailto:bailey.costin@gmail.com">
                     <i class="pointer black fas fa-envelope"></i>
                 </a>
@@ -62,7 +63,7 @@
             <div class="pb4 tc">
                 <div class="header-font white">Let's be internet friends!</div>
                 <a href="https://www.linkedin.com/in/bailey-costin-7745b8179/"><img class="footer-icons pa2" src="{% static '/img/linkedin.png' %}" alt="The LinkedIn logo."></a>
-                <a href="https://github.com/bdcostin"><img class="footer-icons pa2" src="{% static '/img/github.png' %}" alt="The GitHub logo."></a>
+                <a href="https://github.com/bdcostin"><img class="footer-icons pa2" src="{% static '/img/github_white.png' %}" alt="The GitHub logo."></a>
             </div>
             <div class="tc mb3">
                 <div class="body-font gray">Handcrafted with 🧡by me</div>
