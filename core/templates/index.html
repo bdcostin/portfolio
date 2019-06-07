@@ -14,21 +14,19 @@
     </div>
     <div class="gray-box mt5">
         <div class="body-font">
-            I am passionate about building software that improves peoples lives.
+            I am passionate about building software that improves peoples lives. 
         </div>
     </div>
 </div>
 <h3 class="header-font black f-5">My Work</h3>
-{% for project in projects %}
-    {% if project.thumb_nail %}
-       <img src="{{ project.thumb_nail }}">
-    {% endif %}
-{% endfor %}
 <div>
     <div class="project-background">
-    {% for project in projects %}
-       <div>{{ thumb_nail }}</div>
-    {% endfor %}
+{% for project in project_list %}
+    <div class="mt5 mr5 project-box">
+        <img class="project-thumbnail" src="{{ project.thumb_nail.url }}">
+        <div class="body-font tc mt5">{{ project }}</div>
+    </div>
+{% endfor %}
     </div>
     <div class="project-background-bottom project-background-shadow">
         <a class="projects-button f6 link dim ba bw2 ph3 pv2 mb2 dib" href="{% url 'projects' %}">See More</a>
@@ -57,13 +55,12 @@
 </div>
 <div class="flex">
     <div class="header-font black mt5 mb4 f-5">Want to work with me?</div>
-    <div class="header-font tc mt5 mb5 ml6">
+    <div class="header-font tc mt5 mb5 ml6 mr5">
         <a class="black link vision-font " href="mailto:bailey.costin@gmail.com">
             Tell me <br>your vision<br>👁
         </a>
     </div>
 </div>
-{% comment %} <img src="{% static '/img/bull_city_skyline.png' %}" alt=""> {% endcomment %}
 <script>
     var rellax = new Rellax('.rellax');
 </script>

@@ -139,13 +139,6 @@ a {
     line-height: 2rem;
 }
 
-.orange-box {
-    width: 100%;
-    padding: 5%;
-    background-color: #FF7900;
-    z-index: 2;
-}
-
 .black-box {
     width: 100%;
     background-color: #080808;
@@ -204,7 +197,6 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-bottom: 50%;
     background-color: #DEDEDE;
 }
 
@@ -249,6 +241,16 @@ a {
     transform: rotate(3deg);
     right: 10px;
     left: auto;
+}
+
+.project-thumbnail {
+    width: 300px;
+    cursor: pointer;
+}
+
+.project-box {
+    padding: 20px;
+    background-color: #ffffff;
 }
 
 .vision-font {

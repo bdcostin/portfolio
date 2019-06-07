@@ -1,13 +1,17 @@
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.views.generic import TemplateView, ListView
+from core.models import Project
 from django.http import HttpResponse 
 from .forms import ContactForm 
 
 # Create your views here.
 
-class IndexView(TemplateView):
+class IndexView(ListView):
+    model = Project
+    queryset = Project.objects.order_by('-title')
     template_name = "index.html"
-    
+    context_object_name = 'project_list'
+
 class ProjectsView(ListView):
     template_name = "projects.html"
 
