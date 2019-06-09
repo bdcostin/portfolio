@@ -1,16 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0 !important;
+}
+
 @font-face {
     font-family: 'century-gothic-bold';
     src: url('/static/fonts/century-gothic-bold.TTF') format("truetype"),
         local('century-gothic-bold');
 }
 
-a {
-    outline: 0 !important;
-}
-
 .logo {
-    height: 70%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
     padding: 10px 20px 0px 25px;
 }
 
@@ -92,7 +95,7 @@ a {
     justify-content: center;
 }
 
-.fas:hover {
+.fas1:hover {
     color: #FF7900;
 }
 
@@ -170,16 +173,14 @@ a {
 }
 
 .tools {
-    font-size: 5rem
+    padding: 25px;
+    margin-top: 10px;
 }
 
 .tool-box {
     display: flex;
     flex-wrap: wrap;
-}
-
-.tool-box>* {
-    flex: 1 1 140px;
+    justify-content: space-around;
 }
 
 .projects-header {
@@ -253,10 +254,26 @@ a {
     background-color: #ffffff;
 }
 
+.project-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.project-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .github-icons {
     width: 35px;
     height: 35px;
-    margin-left: 45%;
+}
+
+.live-icon {
+    font-size: 35px;
+    margin-left: 20px;
 }
 
 .vision-font {

@@ -1,33 +1,20 @@
-from django.shortcuts import render, render_to_response
-from django.views.generic import TemplateView, ListView
-from core.models import Project
-from django.http import HttpResponse 
-from .forms import ContactForm 
-
-# Create your views here.
+from django.views.generic import TemplateView, ListView, DetailView
+from core.models import Project 
 
 class IndexView(ListView):
     model = Project
     queryset = Project.objects.order_by('-title')
-    template_name = "index.html"
-    context_object_name = 'project_list'
+    template_name = 'core/index.html'
 
 class ProjectsView(ListView):
     model = Project
     queryset = Project.objects.order_by('-title')
-    template_name = "projects.html"
-    context_object_name = 'project_list'
-
-def contact_me(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            # send email code goes here
-            return HttpResponse('Thanks for contacting me!')
-    else:
-        form = ContactForm()
-
-    return render(request, 'contact-me.html', {'form': form})
+    template_name = 'core/projects.html'
 
 class ResumeView(TemplateView):
-    template_name = "resume.html"
+    template_name = 'core/resume.html'
+
+class ProjectDetailView(DetailView):
+    model = Project
+    template = 'project_detail.html'
+    slug_field = 'title'
