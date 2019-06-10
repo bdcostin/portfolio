@@ -124,6 +124,11 @@
     font-family: 'century-gothic-bold', sans-serif;
 }
 
+.resume-header-font {
+    font-family: 'century-gothic-bold', sans-serif;
+    font-size: 32px;
+}
+
 .body-font {
     font-family: 'Roboto', sans-serif;
 }
@@ -276,6 +281,11 @@
     margin-left: 20px;
 }
 
+.social-icon {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
 .vision-font {
     font-size: 40px;
 }
@@ -296,4 +306,14 @@
     height: 35px;
 }
 
+.accordion-header {
+	cursor: pointer;
+}
 
+.accordion-content {
+	display: none;
+}
+
+.active {
+	font-weight: 600;
+}
