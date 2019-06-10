@@ -160,6 +160,16 @@
     z-index: 5;
 }
 
+.resume-gray-background {
+    width: 100%;
+    background-color: #DEDEDE;
+}
+
+.technical-skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .tools-container {
     min-height: 100%;
     background-color: #DEDEDE; 
@@ -283,7 +293,6 @@
 
 .social-icon {
     font-size: 42px;
-    margin-bottom: 5px;
 }
 
 .vision-font {
@@ -311,9 +320,27 @@
 }
 
 .accordion-content {
-	display: none;
+    display: none;
+    background-color: aquamarine;
 }
 
 .active {
-	font-weight: 600;
+	color: #FF7900;
 }
+
+.accordion > .content {
+    display: none;
+}
+.accordion > h2.active:after {
+    content: '◉'
+}
+.accordion > h2:after {
+    content: '◎'
+}
+
+.accordion > section.active:after {
+    content: '◉'
+  }
+.accordion > section:after {
+    content: '◎'
+  }
