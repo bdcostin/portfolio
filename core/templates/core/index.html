@@ -2,11 +2,27 @@
 {% load staticfiles %}
 
 {% block content %}
-<div class="rellax" data-rellax-speed="-4">
-  <div class="letter1">B</div>
+<div class="flex">
+  <div class="rellax letter1" data-rellax-speed="-4">B</div>
+  <div class="wow bounceInRight letter1"></div>
+  <div class="wow bounceInRight rellax letter1" data-rellax-speed="-1" data-wow-delay=".2s">A</div>
+  <div class="wow bounceInRight rellax letter1" data-rellax-speed="-7" data-wow-delay=".2s">I</div>
+  <div class="wow bounceInRight rellax letter1" data-rellax-speed="-4" data-wow-delay=".2s">L</div>
+  <div class="wow bounceInRight rellax letter1" data-rellax-speed="-3" data-wow-delay=".2s">E</div>
+  <div class="wow bounceInRight rellax letter1" data-rellax-speed="-2" data-wow-delay=".2s">Y</div>
 </div>
-<div class="rellax" data-rellax-speed="-4">
-  <img class="logo2" src="{% static '/img/plato-logo.png' %}" alt="An artist rendering of Plato, the Greek philosopher.">
+<div class="flex">
+    <div class="title-background">
+        <div class="wow bounceInUp title mt6 ml4" >Full-Stack Developer</div>
+    </div>
+    <div class="plato ml5">
+        <div class="rellax push-ab" data-rellax-speed="-4">
+            <img class="background-plato" src="{% static '/img/plato-logo.png' %}" alt="An artist rendering of Plato, the Greek philosopher.">
+        </div>
+        <div class="rellax push-ab" data-rellax-speed="-4">
+            <img class="plato-speaks" src="{% static '/img/plato_speaks.png' %}" alt="A speech bubble that says, this guy is a better developer than Socrates - Plato (probably)">
+        </div>
+    </div>
 </div>
 <div class="flex">
     <div class="black-box pa4 mt5">
