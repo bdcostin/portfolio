@@ -340,16 +340,69 @@
     color: #FF7900;
 }
 
-.footer-box {
-    width: 100%;
-    padding: 50px 50px 10px 50px;
-    margin-top: 0;
-    background-color: #080808;
+.footer {
+    position: absolute;
+    display: grid;
 }
 
-.footer-icons {
-    width: 35px;
-    height: 35px;
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.footer-header1 {
+    position: absolute;
+    font-family: 'century-gothic-bold', sans-serif;
+    font-size: 40px;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.footer-header2 {
+    position: absolute;
+    font-family: 'century-gothic-bold', sans-serif;
+    font-size: 40px;
+    margin-top: 23%;
+    margin-left: 10%;
+}
+
+.footer-header3 {
+    position: absolute;
+    font-family: 'century-gothic-bold', sans-serif;
+    font-size: 40px;
+    margin-top: 26%;
+    margin-left: 10%;
+}
+
+.footer-connect {
+    position: absolute;
+    font-family: 'century-gothic-bold', sans-serif;
+    font-size: 40px;
+    margin-top: 20%;
+    margin-left: 55%;
+}
+
+.footer-icon1 {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 55%;
+    width: 65px;
+    height: 65px;
+}
+
+.footer-icon2 {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 60%;
+    width: 65px;
+    height: 65px;
+}
+
+.fine-print{
+    position: absolute;
+    margin-top: 33%;
+    margin-left: 40%;
 }
 
 .accordion-header {
