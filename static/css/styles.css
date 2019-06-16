@@ -11,10 +11,29 @@
         local('century-gothic-bold');
 }
 
-@media (min-width:800px) {
-    body {
-      font-size: 18px;
-    }
+@media screen and (max-width: 300px) {
+    html { font-size: 50%; }
+}
+
+@media screen and (min-width: 500px) {
+    html { font-size: 60%; }
+}
+
+@media screen and (min-width: 700px) {
+    html { font-size: 65%; }
+}
+
+@media screen and (min-width: 1200px) {
+    html { font-size: 100%; }
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    .sidenav { display: none; }
+    .main { margin-left: 0px; }  /* show it on small screens */
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 1024px) {
+    .sidenav { display: block; }   /* hide it elsewhere */
   }
 
 .logo {
@@ -59,9 +78,9 @@
     100% { transform: rotate(359deg); }
 }
 
-.letter1 {
+.name {
     font-family: 'century-gothic-bold', sans-serif;
-    font-size: 400px;
+    font-size: 1300%;
 }
 
 .title-background {
@@ -348,7 +367,6 @@
 .center-fit {
     max-width: 100%;
     max-height: 100vh;
-    margin: auto;
 }
 
 .footer-header1 {
@@ -378,7 +396,7 @@
 .footer-connect {
     position: absolute;
     font-family: 'century-gothic-bold', sans-serif;
-    font-size: 40px;
+    font-size: 200%;
     margin-top: 20%;
     margin-left: 55%;
 }
@@ -387,16 +405,16 @@
     position: absolute;
     margin-top: 25%;
     margin-left: 55%;
-    width: 65px;
-    height: 65px;
+    width: 5%;
+    height: 5%;
 }
 
 .footer-icon2 {
     position: absolute;
     margin-top: 25%;
     margin-left: 60%;
-    width: 65px;
-    height: 65px;
+    width: 5%;
+    height: 5%;
 }
 
 .fine-print{

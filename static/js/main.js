@@ -1,20 +1,30 @@
 'use strict'
 
-var $ = require('jquery')
+const $ = require('jquery')
 
 $(document).scroll(function () {
-  var yAxis = $(this).scrollTop()
-  if (yAxis > 350) {
-    $('.sidenav-icons-spacing').fadeIn()
-    $('.title').fadeIn()
-  } else {
+  const yAxis = $(this).scrollTop()
+  const windowWidth = $(window).width()
+  if ((yAxis < 350) && (windowWidth > 1000)) {
     $('.sidenav-icons-spacing').fadeOut()
     $('.title').fadeOut()
+  } else {
+    $('.sidenav-icons-spacing').fadeIn()
+    $('.title').fadeIn()
+  }
+})
+
+$(document).ready(function () {
+  const windowWidth = $(window).width()
+  if (windowWidth < 1000) {
+    $('.sidenav').remove()
+    $('.main').css({ 'margin-left': '15px', 'margin-right': '15px' })
+    $('.footer').css({ 'margin-right': '15px' })
+    $('.plato-speaks').css({ 'margin-left': '70px', 'margin-top': '10px' })
   }
 })
 
 $(document).ready('.accordion').on('click', '.accordion-header', function () {
-  // will (slide) toggle the related panel.
   $(this)
     .toggleClass('active')
     .next()
