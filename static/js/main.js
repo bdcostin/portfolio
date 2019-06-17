@@ -21,7 +21,8 @@ $(document).ready(function () {
     $('.main').css({ 'margin-left': '15px', 'margin-right': '15px' })
     $('.footer').css({ 'margin-right': '15px' })
     $('.plato-speaks').css({ 'margin-left': '70px', 'margin-top': '10px' })
-    $('#vision').css({ 'margin-left': '5rem' })
+    $('.footer-icon1').css({ 'margin-left': '63%', 'margin-top': '26%' })
+    $('.footer-icon2').css({ 'margin-left': '70%', 'margin-top': '26%' })
   } else {
     $('.container').hide()
   }

@@ -41,7 +41,6 @@
     <div class="mt5 mr3 ml3 project-box">
         <a href="{% url 'project-detail' slug=project.title %}" style="background-image: url({{ project.thumb_nail.url }});"
         class="link mw5 dt hide-child br2 cover bg-center">
-            {% comment %} <img class="project-thumbnail mt4" src="{{ project.thumb_nail.url }}"> {% endcomment %}
             <span class="body-font white dtc v-mid w-100 h-100 child bg-black-40 pa5">
                 {{project.description}}
             </span>
@@ -61,7 +60,7 @@
 {% endfor %}
     </div>
     <div class="project-background-bottom project-background-shadow">
-        <a class="projects-button f6 link dim ba bw2 ph3 pv2 mb2 dib" href="{% url 'projects' %}">See More</a>
+        <a class="projects-button f6 link dim ba bw2 ph3 pv2 mb2 dib" href="{% url 'projects' %}">See All</a>
     </div>
 </div>
 {% comment %} <h2 class="header-font black f-5 mt5 mb5">Tools of My Craft</h2>
