@@ -432,8 +432,13 @@
     font-size: 42px;
 }
 
+#vision {
+    margin-left: 8rem;
+}
+
 .vision-font {
     font-size: 40px;
+    color: #80C31C;
 }
 
 .vision-font:hover {
@@ -485,17 +490,32 @@
 .footer-icon1 {
     position: absolute;
     margin-top: 25%;
-    margin-left: 55%;
+    margin-left: 57%;
     width: 5%;
     height: 5%;
+    z-index: 11;
 }
 
 .footer-icon2 {
     position: absolute;
     margin-top: 25%;
-    margin-left: 60%;
+    margin-left: 63%;
     width: 5%;
     height: 5%;
+    z-index: 11;
+}
+
+#white-box {
+    position: absolute;
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 25%;
+    margin-left: 55%;
+    background-color: #ffffff;
+    width: 15%;
+    height: 15%;
+    padding: 20px;
+    z-index: 10;
 }
 
 .fine-print{

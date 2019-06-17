@@ -7,7 +7,7 @@ class Project(models.Model):
     This model represents my projects
     '''
     title = models.CharField(max_length=150, null=True, blank=True)
-    thumb_nail = models.ImageField(upload_to='static/img/projects', blank=True)
+    thumb_nail = models.ImageField(upload_to='uploads/static/img/projects', blank=True)
     description = models.TextField(max_length=2000, null=True, blank=True)
     technology = models.CharField(max_length=200)
     deployed_url = models.CharField(max_length=150, null=True, blank=True)
