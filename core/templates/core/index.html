@@ -28,16 +28,13 @@
     <div class="black-box pa4 mt5">
         <h2 class="header-font white tc">Hey there, I'm a designer that has knowledge of the whole stack. </h2>
     </div>
-    <div class="gray-box mt5">
+    <div class="bio-box mt5">
         <div class="body-font">
             [Add Bio] 
         </div>
     </div>
 </div>
 <h3 class="header-font black f-5 mt5 mb5">My Work</h3>
-<div class="rellax push-ab" data-rellax-speed="-5">
-            <img id="sun" class="wow fadeIn" src="{% static '/img/orange_circle.png' %}" alt="">
-</div>
 <div>
     <div class="project-background" data-rellax-zindex="6">
 {% for project in project_list %}
@@ -67,6 +64,9 @@
     <div class="project-background-bottom project-background-shadow">
         <a class="projects-button f6 link dim ba bw2 ph3 pv2 dib" href="{% url 'projects' %}">View All</a>
     </div>
+</div>
+<div class="rellax push-ab" data-rellax-speed="-1">
+    <img id="sun" src="{% static '/img/orange_circle.png' %}" alt="">
 </div>
 <script>
     var rellax = new Rellax('.rellax');

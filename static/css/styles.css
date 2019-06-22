@@ -170,7 +170,7 @@
 #sun {
     height: 100%;
     width: 30%;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 30%;
     z-index: 0;
 }
@@ -242,11 +242,6 @@
     font-family: 'century-gothic-bold', sans-serif;
 }
 
-.resume-header-font {
-    font-family: 'century-gothic-bold', sans-serif;
-    font-size: 32px;
-}
-
 .body-font {
     font-family: 'Roboto', sans-serif;
 }
@@ -271,50 +266,33 @@
     margin-left: 0;
 }
 
-.gray-box {
+.bio-box {
     width: 100%;
     padding: 200px;
     background-color: #DEDEDE;
     z-index: 5;
 }
 
-.resume-gray-background {
-    width: 100%;
-    background-color: #DEDEDE;
-}
-
-.technical-skills {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .tools-container {
-    height: 200px;
+    min-height: 100%;
     background-color: #DEDEDE; 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     z-index: 5;
 }
 
 .tools-small-container {
-    height: 80%;
     max-width: 80%;
-    min-width: 80%;
-    margin-top: 60px;
+    min-width: 25%;
+    margin: 120px 120px 120px 120px;
     flex: 1 1 20%;
-    background-color: white;
-    z-index: 5; 
+    background-color: white; 
 }
 
 .tools {
-    padding: 15px;
-    margin-top: 2%;
-}
-
-.tool-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 25px;
+    margin-top: 10px;
 }
 
 .projects-header {
@@ -496,36 +474,6 @@
 .fine-print{
     margin-top: 60px;
 }
-
-.accordion-header {
-	cursor: pointer;
-}
-
-.accordion-content {
-    display: none;
-    background-color: aquamarine;
-}
-
-.active {
-	color: #FF7900;
-}
-
-.accordion > .content {
-    display: none;
-}
-.accordion > h2.active:after {
-    content: '◉'
-}
-.accordion > h2:after {
-    content: '◎'
-}
-
-.accordion > section.active:after {
-    content: '◉'
-  }
-.accordion > section:after {
-    content: '◎'
-  }
 
 [tooltip] {
 
