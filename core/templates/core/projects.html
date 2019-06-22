@@ -6,20 +6,26 @@
 <div class="projects-flex mt5">
 {% for project in project_list %}
     <div class="mr4 mb6 ba bw2">
-        <img class="project-thumbnail mt4" src="{{ project.thumb_nail.url }}">
+        {% comment %} <img class="project-thumbnail mt4" src="{{ project.thumb_nail.url }}"> {% endcomment %}
+        <a href="{% url 'project-detail' slug=project.title %}" style="background-image: url({{ project.thumb_nail.url }});"
+        class="link mw5 dt hide-child br2 cover bg-center">
         <div class="header-font mt5 ml4 f3">{{ project }}</div>
-        <div class="projects-body mt3 ml4">{{ project.description }}</div>
-        <div class="mb4 mt3">
+        <div class="projects-body mt3 ml4 mr4 mb5">{{ project.description }}</div>
+        <div class=" ml4 project-icons">
             <a class="link" href="{{ project.github_url }}" target="_blank">
-                <img class="mt3 ml4 github-icons" src="{% static '/img/github_black.png' %}" alt="The GitHub logo.">
+                <i class="github-icons black fab fa-github" aria-hidden="true" tooltip="Read Me" tooltip-position="bottom"></i>
             </a>
             {% if project.deployed_url %}
-                <a class="link mt3" href="{{ project.deployed_url }}" target="_blank">
-                    <i class="live-icon black fas fa-wifi"></i>
-                </a>
+                <div>
+                    <a class="link ml4" href="{{ project.deployed_url }}" target="_blank">
+                        <i class="live-icon black fas fa-wifi" tooltip="Live Version" tooltip-position="bottom"></i>
+                    </a>
+                </div>
             {% endif %}
         </div>
-        <a class="projects-button ml4 mb4 f6 link dim ba bw2 ph3 pv2 mb2 dib" href="{% url 'project-detail' slug=project.title %}">Details</a>
+        <div class="ml4 mt3">
+            <a class="projects-button mb4 f6 link dim ba bw2 ph3 pv2 mb2 dib" href="{% url 'project-detail' slug=project.title %}">Details</a>
+        </div>
     </div>
 {% endfor %}
 </div>

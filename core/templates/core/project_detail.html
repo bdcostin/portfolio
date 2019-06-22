@@ -2,8 +2,47 @@
 {% load staticfiles %}
 
 {% block content %}
+<div class="header-font">{{ project }}</div>
+<img class="project-thumbnail mt4" src="{{ project.thumb_nail.url }}">
+<div class="header-font f-5 mt5 mb5">Stack</div>
+<div class="tools-container">
+    <div class="tools-small-container mt3 ml6 mr5 mb7">
+        <ul class="list f-6 tool-box ml3 mr3">
+        {% if project.python == True %}
+            <li class="tools"><i class="devicon-python-plain colored"></i></li>
+        {% endif %}
+        {% if project.django == True %}
+            <li class="tools"><i class="devicon-django-plain colored"></i></li>
+        {% endif %}
+        {% if project.javascript == True %}
+            <li class="tools"><i class="devicon-javascript-plain colored"></i></li>
+        {% endif %}
+        {% if project.react == True %}
+            <li class="tools"><i class="devicon-react-original colored"></i></li>
+        {% endif %}
+        {% if project.jquery == True %}
+            <li class="tools"><i class="devicon-jquery-plain-wordmark colored"></i></li>
+        {% endif %}  
+        {% if project.html == True %}
+            <li class="tools"><i class="devicon-html5-plain colored"></i></li>
+        {% endif %} 
+        {% if project.css == True %}
+            <li class="tools"><i class="devicon-css3-plain colored"></i></li>
+        {% endif %}    
+        {% if project.postgresql == True %}
+            <li class="tools"><i class="devicon-postgresql-plain colored"></i></li>
+        {% endif %}     
+        {% if project.heroku == True %}
+            <li class="tools"><i class="devicon-heroku-plain colored"></i></li>
+        {% endif %}     
+        {% if project.aws == True %}
+            <li class="tools"><i class="devicon-amazonwebservices-original colored"></i></li>
+        {% endif %}      
+        </ul>
+    </div>
+</div>
+<div class="project-background-bottom project-background-shadow mb5"></div>
 
-<div>test</div>
-<div>{{ project }}</div>
+
 
 {% endblock %}

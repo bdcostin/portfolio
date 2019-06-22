@@ -4,6 +4,7 @@ from core.models import Project
 class IndexView(ListView):
     model = Project
     queryset = Project.objects.order_by('-title')
+    paginate_by = 3
     template_name = 'core/index.html'
 
 class ProjectsView(ListView):

@@ -13,7 +13,7 @@
 </h1>
 <div class="flex">
     <div class="title-background">
-        <div class="wow bounceInUp title mt6 ml4" >Full-Stack Developer</div>
+        <div class="wow fadeInUp title mt6 ml4" >Full-Stack Developer</div>
     </div>
     <div class="plato ml5">
         <div class="rellax push-ab" data-rellax-speed="-4">
@@ -26,7 +26,7 @@
 </div>
 <div class="flex">
     <div class="black-box pa4 mt5">
-        <h2 class="header-font white tc">Hey there, my name is Bailey! I am a full stack developer from Durham, North Carolina. </h2>
+        <h2 class="header-font white tc">Hey there, I'm a designer that has knowledge of the whole stack. </h2>
     </div>
     <div class="gray-box mt5">
         <div class="body-font">
@@ -35,8 +35,11 @@
     </div>
 </div>
 <h3 class="header-font black f-5 mt5 mb5">My Work</h3>
+<div class="rellax push-ab" data-rellax-speed="-5">
+            <img id="sun" class="wow fadeIn" src="{% static '/img/orange_circle.png' %}" alt="">
+</div>
 <div>
-    <div class="project-background">
+    <div class="project-background" data-rellax-zindex="6">
 {% for project in project_list %}
     <div class="mt5 mr3 ml3 project-box">
         <a href="{% url 'project-detail' slug=project.title %}" style="background-image: url({{ project.thumb_nail.url }});"
@@ -46,50 +49,23 @@
             </span>
         </a>
         <div class="project-title tc mt4 mb3">{{ project }}</div>
-        <div class="project-icons">
+        <div class="project-icons-index">
             <a class="link" href="{{ project.github_url }}" target="_blank">
-                <img class="mt3 github-icons" src="{% static '/img/github_black.png' %}" alt="The GitHub logo.">
+                <i class="github-icons black fab fa-github" aria-hidden="true" tooltip="Read Me" tooltip-position="bottom"></i>
             </a>
             {% if project.deployed_url %}
-                <a class="link mt3" href="{{ project.deployed_url }}" target="_blank">
-                    <i class="live-icon black fas fa-wifi"></i>
-                </a>
+                <div>
+                    <a class="link ml4" href="{{ project.deployed_url }}" target="_blank">
+                        <i class="live-icon black fas fa-wifi" tooltip="Live Version" tooltip-position="bottom"></i>
+                    </a>
+                </div>
             {% endif %}
         </div>
     </div>
 {% endfor %}
     </div>
     <div class="project-background-bottom project-background-shadow">
-        <a class="projects-button f6 link dim ba bw2 ph3 pv2 mb2 dib" href="{% url 'projects' %}">See All</a>
-    </div>
-</div>
-{% comment %} <h2 class="header-font black f-5 mt5 mb5">Tools of My Craft</h2>
-<div class="tools-container">
-    <div class="tools-small-container ml6 mr5 mb4">
-        <ul class="list f-6 tool-box ml3 mr3">
-            <li class="tools"><i class="devicon-django-plain colored"></i></li>
-            <li class="tools"><i class="devicon-python-plain colored"></i></li>
-            <li class="tools"><i class="devicon-javascript-plain colored"></i></li>
-            <li class="tools"><i class="devicon-react-original colored"></i></li>
-            <li class="tools"><i class="devicon-jquery-plain-wordmark colored"></i></li>
-            <li class="tools"><i class="devicon-html5-plain colored"></i></li>
-            <li class="tools"><i class="devicon-css3-plain colored"></i></li>
-            <li class="tools"><i class="devicon-postgresql-plain colored"></i></li>
-            <li class="tools"><i class="devicon-git-plain colored"></i></li>
-            <li class="tools"><i class="devicon-github-plain colored"></i></li>
-            <li class="tools"><i class="devicon-heroku-plain colored"></i></li>
-            <li class="tools"><i class="devicon-amazonwebservices-original colored"></i></li>
-            <li class="tools"><i class="devicon-docker-plain colored"></i></li>
-            <li class="tools"><i class="devicon-visualstudio-plain colored"></i></li>
-        </ul>
-    </div>
-</div> {% endcomment %}
-<div class="flex">
-    <div class="header-font black mt5 mb4 f-5">Want to work with me?</div>
-    <div id="vision" class="header-font tc mt5 mb5 mr5">
-        <a class="black link vision-font " href="mailto:bailey.costin@gmail.com">
-            Tell me <br>your vision
-        </a>
+        <a class="projects-button f6 link dim ba bw2 ph3 pv2 dib" href="{% url 'projects' %}">View All</a>
     </div>
 </div>
 <script>

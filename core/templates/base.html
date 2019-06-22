@@ -32,7 +32,7 @@
                     <span></span>
                     <ul id="menu">
                         <li class="list mt3"><a class="link black" href="{% url 'index' %}">Home</a></li>
-                        <li class="list"><a class="link black" href="#">About</a></li>
+                        <li class="list"><a class="link black" href="{% static "pdf/bdcostinresume.pdf" %}" target="_blank">Resume</a></li>
                         <li class="list"><a class="link black" href="{% url 'projects' %}">Projects</a></li>
                         <li class="list"><a class="link black" href="mailto:bailey.costin@gmail.com">Connect</a></li>
                     </ul>
@@ -42,10 +42,12 @@
             </div>
         </div>
         <nav>
-            <ul class="flex list flex justify-end mt4 mr4">
+            <ul class="flex list justify-end mt4 mr4 f4">
+                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'index' %}">Home</a></li>
+                <li class="nav-font ml1">-</li>
                 <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'projects' %}">Projects</a></li>
                 <li class="nav-font ml1">-</li>
-                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'resume' %}">About</a></li>
+                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% static "pdf/bdcostinresume.pdf" %}" target="_blank">About</a></li>
                 <li class="nav-font ml1">-</li>
                 <li><a class="nav-font ml1 link hover-orange dib pointer black" href="mailto:bailey.costin@gmail.com">Connect</a></li>
             </ul>
@@ -54,7 +56,7 @@
     <body>
         <div class="sidenav title">
             <a href="{% url 'index' %}">
-                <img class="logo title" src="{% static '/img/plato-logo.png' %}" alt="An artist rendering of Plato, the Greek philosopher.">
+                <img class="logo title" src="{% static '/img/b_logo.png' %}" alt="An artist rendering of Plato, the Greek philosopher.">
             </a>
             <div id="my_name" class="header-font title">
                 Bailey Costin
@@ -80,15 +82,27 @@
     </body>
     <footer class="main">
         <div class="footer">
-            <img class="center-fit mr7" src="{% static '/img/footer.png' %}" alt="">
-            <div class="footer-header1">Bold</div>
-            <div class="footer-header2">Functional</div>
-            <div class="footer-header3">Design</div>
-            <div class="footer-connect">Let's be internet friends!</div>
-            <div id="white-box"></div>
-            <a href="https://www.linkedin.com/in/bailey-costin-7745b8179/" class="footer-icon1 pa3" target="_blank"><img src="{% static '/img/linkedin_blue.png' %}" alt="The LinkedIn logo."></a>
-            <a href="https://github.com/bdcostin" class="footer-icon2 pa3" target="_blank"><img src="{% static '/img/github_black.png' %}" alt="The GitHub logo."></a>
-            <div class="fine-print body-font white"><a class="white link" href="https://github.com/bdcostin/portfolio" target="_blank">Source code</a> - © 2019</div>
+            <img class="center-fit mt6 mr7" src="{% static '/img/bull_city_skyline.png' %}" alt="A silhouette drawing of the Durham skyline.">
+            <div class="footer-bottom pa5">
+                <div id="footer-header" class="mt4">
+                    Let's be internet friends!
+                </div>
+                <div id="footer-body" class="mt3">
+                    Feel free to reach out for collaborations or just a friendly hello! 😃
+                </div>
+                <div class="mt4">
+                    <a href="https://www.linkedin.com/in/bailey-costin-7745b8179/" target="_blank"><img class="footer-icons pl3 pr3 pb3" src="{% static '/img/linkedin_white.png' %}" alt="The LinkedIn logo."></a>
+                    <a href="https://github.com/bdcostin" target="_blank"><img class="footer-icons pl3 pr3 pb3"  src="{% static '/img/github_white.png' %}" alt="The GitHub logo."></a>
+                </div>
+                <div class="fine-print body-font gray">
+                    <a class="gray link" href="https://github.com/bdcostin/portfolio" target="_blank">Source code</a> - © 2019
+                </div>
+            </div>
+            <div>
+                <div id="coordinates" class="white">
+                    35.9940° N 78.8986° W
+                </div>
+            </div>
         </div>
     </footer>
 </html>

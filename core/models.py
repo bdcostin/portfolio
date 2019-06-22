@@ -9,10 +9,20 @@ class Project(models.Model):
     title = models.CharField(max_length=150, null=True, blank=True)
     thumb_nail = models.ImageField(upload_to='uploads/static/img/projects', blank=True)
     description = models.TextField(max_length=2000, null=True, blank=True)
-    technology = models.CharField(max_length=200)
     deployed_url = models.CharField(max_length=150, null=True, blank=True)
     github_url = models.CharField(max_length=150, null=True, blank=True)
+    technology = models.CharField(max_length=200, null=True, blank=True)
     slug = models.SlugField(unique=True)
+    python = models.BooleanField(default=False)
+    django = models.BooleanField(default=False)
+    javascript = models.BooleanField(default=False)
+    jquery = models.BooleanField(default=False)
+    react = models.BooleanField(default=False)
+    html = models.BooleanField(default=False)
+    css = models.BooleanField(default=False)
+    postgresql = models.BooleanField(default=False)
+    heroku = models.BooleanField(default=False)
+    aws = models.BooleanField(default=False)
 
     class Meta:
         ordering = ['-title']
@@ -21,15 +31,7 @@ class Project(models.Model):
         '''Creates a unique slug for every project'''
         if self.slug:
             return
-        base_slug = slugify(self.title)
-
-        slug = base_slug
-        n = 0
-
-        while User.objects.filter(slug=slug).count():
-            n += 1
-            slug = base_slug + '-' + str(n)
-        
+        slug = slugify(self.title)
         self.slug = slug
     
     def save(self, *args, **kwargs):
