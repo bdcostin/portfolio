@@ -31,10 +31,26 @@
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                        <li class="list mt3"><a class="link black" href="{% url 'index' %}">Home</a></li>
-                        <li class="list"><a class="link black" href="{% static "pdf/bdcostinresume.pdf" %}" target="_blank">Resume</a></li>
-                        <li class="list"><a class="link black" href="{% url 'projects' %}">Projects</a></li>
-                        <li class="list"><a class="link black" href="mailto:bailey.costin@gmail.com">Connect</a></li>
+                        <li class="list mt3">
+                            <a class="link black" href="{% url 'index' %}">
+                                Home
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a class="link black" href="{% url 'about' %}">
+                                About   
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a class="link black" href="{% url 'projects' %}">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a class="link black" href="mailto:bailey.costin@gmail.com">
+                                Connect
+                            </a>
+                        </li>
                     </ul>
                     </div>
                     </nav>
@@ -47,7 +63,7 @@
                 <li class="nav-font ml1">-</li>
                 <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'projects' %}">Projects</a></li>
                 <li class="nav-font ml1">-</li>
-                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% static "pdf/bdcostinresume.pdf" %}" target="_blank">About</a></li>
+                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'about' %}">About</a></li>
                 <li class="nav-font ml1">-</li>
                 <li><a class="nav-font ml1 link hover-orange dib pointer black" href="mailto:bailey.costin@gmail.com">Connect</a></li>
             </ul>
@@ -65,7 +81,7 @@
                 <a class="sidenav-icons-spacing" href="{% url 'index' %}">
                     <i class="black pointer fas1 fas fa-home"></i>
                 </a>
-                <a class="sidenav-icons-spacing" href="{% url 'resume' %}">
+                <a class="sidenav-icons-spacing" href="{% url 'about' %}">
                     <i id="sidenav-about-spacing" class="sidenav-left-spacing black pointer fas1 fas fa-user"></i>
                 </a>
                 <a class="sidenav-icons-spacing" href="{% url 'projects' %}">

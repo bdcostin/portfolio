@@ -12,8 +12,8 @@ class ProjectsView(ListView):
     queryset = Project.objects.order_by('-title')
     template_name = 'core/projects.html'
 
-class ResumeView(TemplateView):
-    template_name = 'core/resume.html'
+class AboutView(TemplateView):
+    template_name = 'core/about.html'
 
 class ProjectDetailView(DetailView):
     model = Project
