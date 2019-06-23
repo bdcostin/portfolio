@@ -297,7 +297,7 @@
 
 .projects-header {
     font-family: 'century-gothic-bold', sans-serif;
-    font-size: 44px;
+    font-size: 24px;
 }
 
 #projects-page-header {
@@ -312,11 +312,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: start;
 }
 
 .projects-flex > * {
-    flex: 1 1 0;
+    flex: 0 1 21%;
 }
 
 .projects-button{

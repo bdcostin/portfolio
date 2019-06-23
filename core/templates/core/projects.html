@@ -3,17 +3,18 @@
 
 {% block content %}
 <h1 id="projects-page-header" class="mt5 mb4">Work</h1>
-<div class="projects-flex mt5">
+<div class="projects-flex mt5 ml5">
 {% for project in project_list %}
     <div class="mr4 mb6 ba bw2">
-        {% comment %} <img class="project-thumbnail mt4" src="{{ project.thumb_nail.url }}"> {% endcomment %}
-        <a href="{% url 'project-detail' slug=project.title %}" style="background-image: url({{ project.thumb_nail.url }});"
-        class="link mw5 dt hide-child br2 cover bg-center">
-        <div class="header-font mt5 ml4 f3">{{ project }}</div>
-        <div class="projects-body mt3 ml4 mr4 mb5">{{ project.description }}</div>
-        <div class=" ml4 project-icons">
+        <a href="{% url 'project-detail' slug=project.title %}">
+            <img class="project-thumbnail mt4" src="{{ project.thumb_nail.url }}">
+        </a>
+        <div class="projects-header mb3 mt3 ml4">
+            {{ project.title }}
+        </div>
+        <div class="ml4 project-icons">
             <a class="link" href="{{ project.github_url }}" target="_blank">
-                <i class="github-icons black fab fa-github" aria-hidden="true" tooltip="Read Me" tooltip-position="bottom"></i>
+                <i class="github-icons black fab fa-github" tooltip="Read Me" tooltip-position="bottom"></i>
             </a>
             {% if project.deployed_url %}
                 <div>
@@ -29,7 +30,4 @@
     </div>
 {% endfor %}
 </div>
-
-<img class="" src="{{ project.thumb_nail.url }}">
-
 {% endblock %}
