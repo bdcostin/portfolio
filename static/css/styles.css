@@ -283,12 +283,18 @@
 }
 
 .tools-small-container {
+    flex: 1 1 25%;
     max-width: 80%;
     min-width: 25%;
     margin: 120px 120px 120px 120px;
-    flex: 1 1 20%;
     background-color: white; 
 }
+
+.tool-box {
+    display: flex;	
+    flex-wrap: wrap;	
+    justify-content: space-around;	
+}	
 
 .tools {
     padding: 25px;
