@@ -134,3 +134,11 @@ dmypy.json
 
 node_modules/
 static/build/
+
+# AWS
+requirements.txt
+.ebextensions
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
