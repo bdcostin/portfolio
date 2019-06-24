@@ -1,4 +1,4 @@
-from polimetrics.settings import *
+from portfolio.settings import *
 
 import django_heroku
 
