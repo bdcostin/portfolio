@@ -186,7 +186,7 @@
     position: fixed;
     transform-origin: 0 0;
     transform: rotate(-90deg);
-    margin-top: 330px;
+    margin-top: 300px;
     margin-left: 30px;
     font-size: 44px;
 }
@@ -206,7 +206,7 @@
 .sidenav-icons {
     display: flex;
     font-size: 30px;
-    margin-top: 400px;
+    margin-top: 370px;
     margin-left: 40px;
     flex-direction: column;
     justify-content: center;
@@ -218,7 +218,7 @@
 
 .sidenav-icons-spacing {
     display: none;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .title {
