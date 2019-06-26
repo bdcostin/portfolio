@@ -18,6 +18,8 @@ $(document).ready(function () {
   const windowWidth = $(window).width()
   if (windowWidth < 1000) {
     $('.sidenav').remove()
+    $('.top-nav').remove()
+    $('.container').removeClass('hide-container')
     $('.main').css({ 'margin-left': '15px', 'margin-right': '15px' })
     $('.footer').css({ 'margin-right': '15px' })
     $('.plato-speaks').css({ 'margin-left': '70px', 'margin-top': '10px' })

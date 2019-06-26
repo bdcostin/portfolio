@@ -288,6 +288,10 @@ b {
     font-weight: 900;
 }
 
+.hide-container {
+    display: none;
+}
+
 .tools-container {
     min-height: 100%;
     background-color: #DEDEDE; 
