@@ -225,6 +225,12 @@
     display: none;
 }
 
+#index-header {
+    font-family: 'century-gothic-bold', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
 #sidenav-contact-spacing {
     margin-left: 3px;
 }
@@ -257,20 +263,29 @@
 }
 
 .bio {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     line-height: 2rem;
 }
 
 .black-box {
     width: 100%;
+    min-width: 50%;
     background-color: #090909;
     margin-left: 0;
+    z-index: 5;
 }
 
 .bio-box {
     width: 100%;
-    padding: 200px;
+    height: 350px;
+    min-width: 50%;
     background-color: #DEDEDE;
     z-index: 5;
+}
+
+b {
+    font-weight: 900;
 }
 
 .tools-container {
@@ -482,7 +497,6 @@
 }
 
 [tooltip] {
-
     position: relative;
 }
 
@@ -494,10 +508,10 @@
     background: rgba(0, 0, 0, 0.7);
     text-align: center;
     color: #fff;
-    font-family: "muli", sans-serif;
     padding: 4px 2px;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     min-width: 80px;
     border-radius: 5px;
     pointer-events: none;

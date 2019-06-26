@@ -26,15 +26,17 @@
 </div>
 <div class="flex">
     <div class="black-box pa4 mt5">
-        <h2 class="header-font white tc">Hey there, I'm a designer that has knowledge of the whole stack. </h2>
+        <h2 id="index-header">Hey there, I'm a designer that has knowledge of the whole stack. </h2>
     </div>
     <div class="bio-box mt5">
-        <div class="body-font">
-            [Add Bio] 
+        <div class="bio pa4">
+            <b>Design is my passion, code is my medium.</b><br><br>I take an iterative approach to developing user-centered websites.
         </div>
-        <a class="projects-button f6 link dim ba bw2 ph3 pv2 dib" href="{% url 'about' %}">
-            Details
-        </a>
+        <div class="tc mt4">
+            <a class="projects-button f6 link dim ba bw2 ph3 pv2 dib" href="{% url 'about' %}">
+                Details
+            </a>
+        </div>
     </div>
 </div>
 <h3 class="header-font black f-5 mt5 mb5">My Work</h3>
@@ -51,7 +53,7 @@
         <div class="project-title tc mt4 mb3">{{ project }}</div>
         <div class="project-icons-index">
             <a class="link" href="{{ project.github_url }}" target="_blank">
-                <i class="github-icons black fab fa-github" aria-hidden="true" tooltip="Read Me" tooltip-position="bottom"></i>
+                <i class="github-icons black fab fa-github" tooltip="Read Me" tooltip-position="bottom"></i>
             </a>
             {% if project.deployed_url %}
                 <div>
