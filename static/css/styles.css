@@ -5,6 +5,12 @@
     outline: 0 !important;
 }
 
+body {
+    max-width: 1550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @font-face {
     font-family: 'century-gothic-bold';
     src: url('/static/fonts/century-gothic-bold.TTF') format("truetype"),
@@ -25,6 +31,10 @@
 
 @media screen and (min-width: 1200px) {
     html { font-size: 100%; }
+}
+
+@media screen and (min-width: 1750px) {
+    html { font-size: 110%; }
 }
 
 ::selection {
@@ -149,17 +159,21 @@
 }
 
 .background-plato {
-    height: 100%;
-    width: 45%;
+    /* height: 100%;
+    width: 45%; */
+    height: 300px;
+    width: 200px;
     z-index: 0;
     margin-left: 250px;
 }
 
 .plato-speaks {
-    height: 100%;
-    width: 45%;
+    /* height: 100%;
+    width: 45%; */
+    height: 200px;
+    width: 200px;
     z-index: 50;
-    margin-left: 10px;
+    margin-left: 40px;
     margin-top: -25px;
 }
 
@@ -239,9 +253,14 @@
     margin-left: 5px;
 }
 
-.main {
+.full-spacing {
     margin-left: 120px;
     margin-right: 120px;
+}
+
+.small-spacing {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .header-font {
@@ -249,7 +268,7 @@
 }
 
 .body-font {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
 }
 
 #headshot {
@@ -263,7 +282,7 @@
 }
 
 .bio {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: 20px;
     line-height: 2rem;
 }
@@ -282,10 +301,6 @@
     min-width: 50%;
     background-color: #DEDEDE;
     z-index: 5;
-}
-
-b {
-    font-weight: 900;
 }
 
 .hide-container {
@@ -412,12 +427,12 @@ b {
 }
 
 .project-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: 24px;
 }
 
 .projects-body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
     height: 50px;
 }
 
@@ -451,6 +466,7 @@ b {
     position: absolute;
     display: grid;
     margin-right: 120px;
+    max-width: 1550px;
 }
 
 .footer-bottom {
@@ -491,7 +507,7 @@ b {
 }
 
 #footer-body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
     font-size: 16px;
     color: #ffffff;
 }
@@ -514,7 +530,7 @@ b {
     color: #fff;
     padding: 4px 2px;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
     font-weight: bold;
     min-width: 80px;
     border-radius: 5px;

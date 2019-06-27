@@ -10,8 +10,7 @@
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-        <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">        
         <link rel="stylesheet" href="{% static 'animate.css/animate.min.css' %}">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <script src="{% static 'build/bundle.js' %}"></script>
@@ -92,11 +91,11 @@
                 </a>
             </div>
         </div>
-        <div class="main">
+        <div class="main full-spacing">
             {% block content %}{% endblock %}
         </div>
     </body>
-    <footer class="main">
+    <footer class="main full-spacing">
         <div class="footer">
             <img class="center-fit mt6 mr7" src="{% static '/img/bull_city_skyline.png' %}" alt="A silhouette drawing of the Durham skyline.">
             <div class="footer-bottom pa5">
