@@ -150,6 +150,7 @@ body {
 .title-background {
     min-height: 50px;
     width: 50%;
+    min-width: 50%;
     background-color: #80C31C;
 }
 
@@ -159,8 +160,6 @@ body {
 }
 
 .background-plato {
-    /* height: 100%;
-    width: 45%; */
     height: 300px;
     width: 200px;
     z-index: 0;
@@ -168,12 +167,10 @@ body {
 }
 
 .plato-speaks {
-    /* height: 100%;
-    width: 45%; */
     height: 200px;
     width: 200px;
     z-index: 50;
-    margin-left: 40px;
+    margin-left: 70px;
     margin-top: -25px;
 }
 
