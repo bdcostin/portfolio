@@ -554,4 +554,9 @@ body {
     visibility: visible;
 }
 
+.about-img {
+    width: 30%;
+    height: 45%;
+}
+
 

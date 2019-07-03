@@ -2,7 +2,23 @@
 {% load staticfiles %}
 
 {% block content %}
+<div class="flex mt4">
+    <img class="rellax mt4 about-img" data-rellax-speed="-2" src="{% static '/img/bw_me.jpg' %}" alt="">
+    <div class="pl4 pr4 mt4 body-font">
+        Lorem ipsum dolor sit amet, ad saperet lucilius usu, pri no corpora epicurei efficiantur. No per solet apeirian elaboraret. Usu porro tritani interpretaris ne. Mei dolor omnium civibus te, qui ea officiis iracundia, te eam persius ponderum. An solum essent per, usu atqui vivendum tincidunt id, etiam putent cu cum.
 
+        Sonet forensibus constituto has eu, ex mei gubergren comprehensam, qui ornatus assueverit reformidans ad. His omnium singulis pertinax ea, liber utroque vis ea. Nam an illum antiopam signiferumque, nec atqui latine oportere et, ex ius purto animal. Sea et saepe tractatos, ignota melius moderatius qui ne. Et graecis legendos adipisci pri, sea ei legere corrumpit. Sit putant deseruisse et.
 
-<a class="projects-button f6 link dim ba bw2 ph3 pv2 mb2 dib" href="{% static "pdf/bcostinresume.pdf" %}" target="_blank">Résumé</a>
+        Ei amet suavitate vel, agam eligendi nam et. Est no populo appetere corrumpit. At scribentur dissentiunt mei. Nam te labore reprimique. Pri autem nonumy pericula cu.
+
+        In qui nostro volumus fastidii. Diceret tacimates id his, choro explicari eu pri. Mei sumo euripidis in, te oratio decore incorrupte sit. Vel ut option denique minimum, ei velit inani consulatu nec. Mutat etiam conceptam pro ei, ut probatus delicatissimi mea. Vide commodo his ei, duo inermis fastidii lobortis at, pri et eirmod consetetur efficiantur.
+
+        Nominavi ponderum ut eos, at timeam nominati usu. Ius ei wisi iuvaret quaeque, sit vide paulo ut, nibh altera pro ut. Modo utroque no sit, utinam voluptua deseruisse et his. Diam velit et nam, cu legere audire dolorem vix, ad vis utinam euismod.<br>
+        <a class="projects-button mt4 f6 link dim ba bw2 ph3 pv2 mb2 dib" href="{% static "pdf/costinbresume.pdf" %}" target="_blank">Résumé</a>
+    </div>
+</div>
+
+<script>
+    var rellax = new Rellax('.rellax');
+</script>
 {% endblock %}
