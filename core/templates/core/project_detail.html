@@ -3,7 +3,36 @@
 
 {% block content %}
 <div class="header-font mt4 mb4 f-5">{{ project }}</div>
-<img class="project-thumbnail mt4" src="{{ project.thumb_nail.url }}">
+<div class="flex">
+    <div class="project-thumbnail-box">
+        <a href="{{ project.github_url }}" target="_blank">
+            <img class="project-thumbnail mt4" src="{{ project.thumb_nail.url }}">
+        </a>
+    </div>
+    <div class="project-description mr4 body-font body-line-height">
+        {{ project.description }}
+        {% if project.challenges != null %}
+            <div class="header-font mt4 mb2 f-4">
+                Challenges
+            </div>
+            <div>
+                {{ project.challenges }}
+            </div>
+        {% endif %}
+        <div class="project-icons-project-detail mt4">
+            <a class="link" href="{{ project.github_url }}" target="_blank">
+                <i class="github-icons black fab fa-github" tooltip="Read Me" tooltip-position="bottom"></i>
+            </a>
+            {% if project.deployed_url %}
+                <div>
+                    <a class="link ml4" href="{{ project.deployed_url }}" target="_blank">
+                        <i class="live-icon black fas fa-wifi" tooltip="Live Version" tooltip-position="bottom"></i>
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
 <div class="header-font f-5 mt5 mb5">Stack</div>
 <div class="tools-container">
     <div class="tools-small-container mt3 ml6 mr5 mb7">

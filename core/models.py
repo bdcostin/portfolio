@@ -9,6 +9,7 @@ class Project(models.Model):
     title = models.CharField(max_length=150, null=True, blank=True)
     thumb_nail = models.ImageField(upload_to='uploads/static/img/projects', blank=True)
     description = models.TextField(max_length=2000, null=True, blank=True)
+    challenges = models.TextField(max_length=2000, null=True, blank=True)
     deployed_url = models.CharField(max_length=150, null=True, blank=True)
     github_url = models.CharField(max_length=150, null=True, blank=True)
     technology = models.CharField(max_length=200, null=True, blank=True)
