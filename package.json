@@ -10,7 +10,7 @@
     "wow.js": "^1.2.2"
   },
   "devDependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "watchify": "^3.11.1"
   },
   "scripts": {
