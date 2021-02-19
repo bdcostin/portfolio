@@ -36,8 +36,8 @@
                             </a>
                         </li>
                         <li class="list">
-                            <a class="link black" href="{% url 'about' %}">
-                                About   
+                            <a class="link black" href="{% static "pdf/costinbresume.pdf" %}" target="_blank">
+                                Resume   
                             </a>
                         </li>
                         <li class="list">
@@ -60,7 +60,7 @@
                 <li class="nav-font ml1">-</li>
                 <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'projects' %}">Projects</a></li>
                 <li class="nav-font ml1">-</li>
-                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% url 'about' %}">About</a></li>
+                <li><a class="nav-font ml1 link hover-orange dib pointer black" href="{% static "pdf/costinbresume.pdf" %}" target="_blank">Resume</a></li>
                 <li class="nav-font ml1">-</li>
                 <li><a class="nav-font ml1 link hover-orange dib pointer black" href="mailto:bailey.costin@gmail.com">Connect</a></li>
             </ul>
@@ -78,7 +78,7 @@
                 <a class="sidenav-icons-spacing" href="{% url 'index' %}">
                     <i class="black pointer fas1 fas fa-home"></i>
                 </a>
-                <a class="sidenav-icons-spacing" href="{% url 'about' %}">
+                <a class="sidenav-icons-spacing" href="{% static "pdf/costinbresume.pdf" %}" target="_blank">
                     <i id="sidenav-about-spacing" class="sidenav-left-spacing black pointer fas1 fas fa-user"></i>
                 </a>
                 <a class="sidenav-icons-spacing" href="{% url 'projects' %}">
@@ -108,7 +108,7 @@
                     <a href="https://github.com/bdcostin" target="_blank"><img class="footer-icons pl3 pr3 pb3"  src="{% static '/img/github_white.png' %}" alt="The GitHub logo."></a>
                 </div>
                 <div class="fine-print body-font gray">
-                    <a class="gray link" href="https://github.com/bdcostin/portfolio" target="_blank">Source code</a> - © 2019
+                    <a class="gray link" href="https://github.com/bdcostin/portfolio" target="_blank">Source code</a> - © 2021
                 </div>
             </div>
             <div>

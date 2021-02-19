@@ -11,14 +11,14 @@
     </div>
     <div class="project-description mr4 body-font body-line-height">
         {{ project.description }}
-        {% if project.challenges != null %}
+        {% comment %} {% if project.challenges != null %}
             <div class="header-font mt4 mb2 f-4">
                 Challenges
             </div>
             <div>
                 {{ project.challenges }}
             </div>
-        {% endif %}
+        {% endif %} {% endcomment %}
         <div class="project-icons-project-detail mt4">
             <a class="link" href="{{ project.github_url }}" target="_blank">
                 <i class="github-icons black fab fa-github" tooltip="Read Me" tooltip-position="bottom"></i>
@@ -70,5 +70,4 @@
         </ul>
     </div>
 </div>
-<div class="project-background-bottom project-background-shadow mb5"></div>
 {% endblock %}

@@ -13,7 +13,7 @@
 </h1>
 <div class="flex">
     <div class="title-background">
-        <div class="wow fadeInUp title mt6 ml4" >Full-Stack Developer</div>
+        <div class="wow fadeInUp title mt6 ml4">is a Software Engineer</div>
     </div>
     <div class="plato ml5">
         <div class="rellax push-ab" data-rellax-speed="-4">
@@ -24,26 +24,21 @@
         </div>
     </div>
 </div>
+    <h2 class="header-font black f-5 mt5">
+        Hey there! 👋🏼
+    </h2>
 <div class="flex">
-    <div class="black-box pa4 mt5">
-        <h2 id="index-header">Hey there, I'm a designer that has knowledge of the whole stack. </h2>
-        <img class="mt4" src="{% static '/img/gif_me.gif' %}" alt="">
-    </div>
+
     <div class="bio-box mt5">
         <div class="bio pa4">
-            I am a newcomer to the field of software development. Currently living in Durham, NC, I spend most of my days experimenting with HTML, CSS, JavaScript, and Python; in addition to consuming a ton of information about technology from the web. 
+            I am a Software Engineer II working on <a class="link lexis-link" href="https://www.lexisnexis.com/en-us/products/lexis-plus.page" target="_blank">Lexis+</a> at LexisNexis and currently live in the Raleigh-Durham area of North Carolina. Prior to working as a software engineer I attended <a class="link bootcamp-link" href="https://www.momentumlearn.com/" target="_blank">Momentum's coding bootcamp</a> in Durham, NC. The culmination of my bootcamp experience was leading a team that built Polimetrics, which is a Django web application that I conceptualized to poll presidential primary candidates using Tweet sentiment. I have previous work experience in the legal industry as a Senior Paralegal and hold a B.A. in Philosophy and Political Science with a minor in Philosophy, Politics, and Economics from the University of North Carolina at Chapel Hill.  
             <br>
             <br>
-            Software development is my passion. I continuously strive to become a better developer, enhance the development community, and make the internet a more beautiful place. I am presently enhancing my knowledge of JavaScript frameworks and user-centric design. 
-        </div>
-        <div class="tc mt2">
-            <a class="projects-button f6 link dim ba bw2 ph3 pv2 dib" href="{% url 'about' %}">
-                Details
-            </a>
+            I am customer obsessed, and I continuously strive to become a better developer, enhance the development community, and make the internet a more beautiful place. I am presently enhancing my knowledge of front-end frameworks and user-centric design. 
         </div>
     </div>
 </div>
-<h3 class="header-font black f-5 mt5 mb5">My Work</h3>
+<h3 class="header-font black f-5 mt5 mb5">Some Side Projects</h3>
 <div>
     <div class="project-background" data-rellax-zindex="6">
 {% for project in project_list %}
@@ -70,7 +65,7 @@
     </div>
 {% endfor %}
     </div>
-    <div class="project-background-bottom project-background-shadow">
+    <div class="project-background-bottom">
         <a class="projects-button f6 link dim ba bw2 ph3 pv2 dib" href="{% url 'projects' %}">View All</a>
     </div>
 </div>
